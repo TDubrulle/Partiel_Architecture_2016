@@ -2,11 +2,20 @@
 #include "ProcreationAction.h"
 
 
-ProcreationAction::ProcreationAction()
+void ProcreationAction::faireAction(Element * e)
+{
+}
+
+ProcreationAction::ProcreationAction() : Action(1)
 {
 }
 
 
 ProcreationAction::~ProcreationAction()
 {
+}
+
+bool ProcreationAction::isDoable(Element * e)
+{
+	return false;
 }

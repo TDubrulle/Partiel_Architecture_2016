@@ -2,7 +2,7 @@
 #include "DeplacementAction.h"
 
 
-DeplacementAction::DeplacementAction()
+DeplacementAction::DeplacementAction() : Action(1)
 {
 }
 

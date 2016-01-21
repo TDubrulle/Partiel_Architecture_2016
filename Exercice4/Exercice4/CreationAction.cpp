@@ -2,11 +2,20 @@
 #include "CreationAction.h"
 
 
-CreationAction::CreationAction()
+void CreationAction::faireAction(Element * e)
+{
+}
+
+CreationAction::CreationAction() : Action(1)
 {
 }
 
 
 CreationAction::~CreationAction()
 {
+}
+
+bool CreationAction::isDoable(Element * e)
+{
+	return false;
 }

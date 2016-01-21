@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "Element.h"
 
-
+#include "Action.h"
 
 Element::Element(int x, int y, Combat * combat, Mouvement * mouvement, int vision, int vie)
 {
@@ -11,6 +11,7 @@ Element::Element(int x, int y, Combat * combat, Mouvement * mouvement, int visio
 	this->mouvement = mouvement;
 	this->vision = vision;
 	this->vie = vie;
+	this->actions = nullptr;
 }
 
 Element::Element()
@@ -21,12 +22,29 @@ Element::Element()
 	this->mouvement = nullptr;
 	this->vision = 0;
 	this->vie = 0;
+	this->actions = nullptr;
 }
 
 Element::~Element()
 {
+
 }
 
 void Element::update(Monde m)
 {
+	//si on a une action courante en cours, on l'exécute.
+	if (actionCourante != nullptr ) {
+		//Fait l'action.
+		actionCourante->update(this);
+	}
+	if(actionCourante == nullptr) {
+		//Sinon, on en choisit une nouvelle
+		for (int i = 0; i < actions->size(); i++) {
+			if (/*TODO:actions.at(i).isDoable()*/false) {
+				actionCourante = &actions->at(i);
+				actionCourante->start();
+				actionCourante->update(this);
+			}
+		}
+	}
 }

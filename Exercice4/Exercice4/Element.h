@@ -2,6 +2,10 @@
 #include "Mouvement.h"
 #include "Combat.h"
 #include "Monde.h"
+#include <vector>
+
+class Action;
+
 /**Un élément du jeu*/
 class Element
 {
@@ -18,9 +22,12 @@ public:
 	int vie;
 	Mouvement *mouvement;
 	Combat *combat;
+
+	std::vector<Action> *actions;
+	Action *actionCourante;
 	
 	~Element();
 
 	/**Met à jour l'entité dans le monde correspondant.*/
-	virtual void update(Monde m);
+	void update(Monde m);
 };
