@@ -1,4 +1,5 @@
 #pragma once
+/**Le combat indique la capacité à combattre.*/
 class Combat
 {
 public:

@@ -1,6 +1,8 @@
 #pragma once
 #include "Element.h"
 #include "Ressource.h"
+
+/**Une ressource est un élément récoltable.*/
 class RessourceElement :
 	public Element
 {

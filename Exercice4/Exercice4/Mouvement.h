@@ -1,4 +1,5 @@
 #pragma once
+/**Le mouvement indique la capacité à se mouvoir.*/
 class Mouvement
 {
 public:

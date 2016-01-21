@@ -5,7 +5,7 @@
 
 class Action;
 
-/**Un élément du jeu*/
+/**Un élément du jeu. Chaque élément intéragit grâce à une liste d'actions et possède plusieurs caractéristiques.*/
 class Element
 {
 protected:
