@@ -1,8 +1,10 @@
 #pragma once
 class Monde
 {
-public:
+private:
+	static Monde instance;
 	Monde();
-	~Monde();
+public:
+	static Monde getInstance();
 };
 

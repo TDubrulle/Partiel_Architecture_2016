@@ -6,7 +6,9 @@ Monde::Monde()
 {
 }
 
-
-Monde::~Monde()
+Monde Monde::getInstance()
 {
+	static Monde instance;
+	return instance;
 }
+
