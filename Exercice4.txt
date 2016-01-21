@@ -1,0 +1,26 @@
+Question n°1:
+
+Remarques par rapport à l'UML:
+-Le peuple est considéré comme unique. Les membres du peuple sont distinct sur la carte (Un seul membre par case).
+-On considère que les éléments, une fois créés, ne peuvent plus changer de dommages ou de vitesse.
+-Les ElementFactory contiennent toutes les rêgles de construction d'éléments.
+-En distinguant le conteneur de la ressource (RessourceElement) et sa quantité (ressource), on pourrait ajouter de nouveaux types de ressources.
+
+Question n°2:
+
+Les fichiers sources doivent être inclus avec ce fichier.
+Le projet complet peut néanmoins être récupéré sur le dépot git suivant:
+https://github.com/TDubrulle/Partiel_Architecture_2016
+
+Le projet n'est pas complet, mais le code a été documenté (au mieux) pour essayer de comprendre les intentions dans le développement.
+
+Question n°3:
+
+Si le projet devait être multi-threadé, le diagramme UML s'en trouverait changé, notamment au niveau de Monde:
+
+Solution 1:
+-Une threadPool serait implémentée au niveau de Monde. Le monde ajouterait des tâches (les éléments du jeu) toutes les x unités de temps (déterminée par le temps Manager).
+-Une liste de thread prendrait chaque tâche une à une (élément.doAction()).
+
+Solution 2:
+-Vu que le monde est quadrillé et (très probablement) fini, on peut attribuer à chaque thread une suite de lignes. Le nombre de lignes à gérer par thread dépendrait donc du nombre de thread ainsi que la taille de la carte.

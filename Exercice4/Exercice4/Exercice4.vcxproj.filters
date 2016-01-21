@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Action">
+      <UniqueIdentifier>{32299ff3-0b45-42bd-a4d9-becb2fab7a00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Combat">
+      <UniqueIdentifier>{b975e420-a9ed-42a9-944c-7f5161c5a5cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Element">
+      <UniqueIdentifier>{0863fc6a-003f-4eab-988e-836f99eec01f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Mouvement">
+      <UniqueIdentifier>{dc2bdb77-b2e5-468f-99f0-69ec0e177cc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Combat">
+      <UniqueIdentifier>{50dc1c36-df17-4d44-a6e2-0fe66592a232}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Mouvement">
+      <UniqueIdentifier>{47d5acb2-eded-4caa-9ac6-f6276000925f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Factories">
+      <UniqueIdentifier>{2d09c866-048d-478a-8a06-8181df314835}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elements">
+      <UniqueIdentifier>{17f24802-abf3-4634-ade7-3a18f1855093}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Actions">
+      <UniqueIdentifier>{b0eb2be0-d3a3-42a3-b742-f54532df646e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Factories">
+      <UniqueIdentifier>{bc48848f-5cfb-459b-bc0e-cc3b42f5a586}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Monde.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Action.h">
+      <Filter>Header Files\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="CollecteAction.h">
+      <Filter>Header Files\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="CombatAction.h">
+      <Filter>Header Files\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="CreationAction.h">
+      <Filter>Header Files\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="DeplacementAction.h">
+      <Filter>Header Files\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Aggressif.h">
+      <Filter>Header Files\Combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Combat.h">
+      <Filter>Header Files\Combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Pacifique.h">
+      <Filter>Header Files\Combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Element.h">
+      <Filter>Header Files\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="PeupleMembre.h">
+      <Filter>Header Files\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="Predateur.h">
+      <Filter>Header Files\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="RessourceElement.h">
+      <Filter>Header Files\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouvement.h">
+      <Filter>Header Files\Mouvement</Filter>
+    </ClInclude>
+    <ClInclude Include="Immobile.h">
+      <Filter>Header Files\Mouvement</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobile.h">
+      <Filter>Header Files\Mouvement</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcreationAction.h">
+      <Filter>Header Files\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Peuple.h">
+      <Filter>Header Files\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="Ressource.h">
+      <Filter>Header Files\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="ElementFactory.h">
+      <Filter>Header Files\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="PeupleFactory.h">
+      <Filter>Header Files\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="PredateurFactory.h">
+      <Filter>Header Files\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="RessourceFactory.h">
+      <Filter>Header Files\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="vide.h">
+      <Filter>Header Files\Element</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercice4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Monde.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Action.cpp">
+      <Filter>Source Files\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="CollecteAction.cpp">
+      <Filter>Source Files\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="CombatAction.cpp">
+      <Filter>Source Files\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="CreationAction.cpp">
+      <Filter>Source Files\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="DeplacementAction.cpp">
+      <Filter>Source Files\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcreationAction.cpp">
+      <Filter>Source Files\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Combat.cpp">
+      <Filter>Source Files\Combat</Filter>
+    </ClCompile>
+    <ClCompile Include="Aggressif.cpp">
+      <Filter>Source Files\Combat</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobile.cpp">
+      <Filter>Source Files\Mouvement</Filter>
+    </ClCompile>
+    <ClCompile Include="Immobile.cpp">
+      <Filter>Source Files\Mouvement</Filter>
+    </ClCompile>
+    <ClCompile Include="Element.cpp">
+      <Filter>Source Files\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Pacifique.cpp">
+      <Filter>Source Files\Combat</Filter>
+    </ClCompile>
+    <ClCompile Include="Mouvement.cpp">
+      <Filter>Source Files\Mouvement</Filter>
+    </ClCompile>
+    <ClCompile Include="PeupleMembre.cpp">
+      <Filter>Source Files\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Predateur.cpp">
+      <Filter>Source Files\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="RessourceElement.cpp">
+      <Filter>Source Files\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="ElementFactory.cpp">
+      <Filter>Source Files\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="PredateurFactory.cpp">
+      <Filter>Source Files\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="RessourceFactory.cpp">
+      <Filter>Source Files\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="PeupleFactory.cpp">
+      <Filter>Source Files\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="Ressource.cpp">
+      <Filter>Source Files\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Peuple.cpp">
+      <Filter>Source Files\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="vide.cpp">
+      <Filter>Source Files\Elements</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
