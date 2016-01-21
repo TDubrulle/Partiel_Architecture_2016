@@ -1,7 +1,6 @@
 #pragma once
 #include "Mouvement.h"
 #include "Combat.h"
-#include "Monde.h"
 #include <vector>
 
 class Action;
@@ -23,11 +22,11 @@ public:
 	Mouvement *mouvement;
 	Combat *combat;
 
-	std::vector<Action> *actions;
+	std::vector<Action*> *actions;
 	Action *actionCourante;
 	
 	~Element();
 
 	/**Met à jour l'entité dans le monde correspondant.*/
-	void update(Monde m);
+	void update();
 };

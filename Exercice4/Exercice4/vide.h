@@ -6,5 +6,7 @@ class vide :
 public:
 	vide();
 	~vide();
+
+
 };
 

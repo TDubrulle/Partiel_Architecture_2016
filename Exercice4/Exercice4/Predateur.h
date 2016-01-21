@@ -2,6 +2,8 @@
 #include "Element.h"
 #include "Aggressif.h"
 #include "Mobile.h"
+#include "DeplacementAction.h"
+#include "CombatAction.h"
 class Predateur :
 	public Element
 {

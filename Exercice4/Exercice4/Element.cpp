@@ -27,10 +27,9 @@ Element::Element()
 
 Element::~Element()
 {
-
 }
 
-void Element::update(Monde m)
+void Element::update()
 {
 	//si on a une action courante en cours, on l'exécute.
 	if (actionCourante != nullptr ) {
@@ -39,9 +38,9 @@ void Element::update(Monde m)
 	}
 	if(actionCourante == nullptr) {
 		//Sinon, on en choisit une nouvelle
-		for (int i = 0; i < actions->size(); i++) {
+		for (unsigned int i = 0; i < actions->size(); i++) {
 			if (/*TODO:actions.at(i).isDoable()*/false) {
-				actionCourante = &actions->at(i);
+				actionCourante = actions->at(i);
 				actionCourante->start();
 				actionCourante->update(this);
 			}
